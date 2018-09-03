@@ -20,8 +20,12 @@ Hours Spent: 15
 
 ### Features
 
-* Log to track meals, with the ability to save names, images, and ratings.
+* Log to track meals, with the ability to save names, images, and ratings:  
 * Table display to view saved meal data
+
+<img src="/FoodTracker/FoodTracker/lib/Meal Entry.png" width="400">
+<img src="/FoodTracker/FoodTracker/lib/Table View.png" width="393">   
+
 
 ### Known Bugs
 
@@ -36,6 +40,5 @@ Hours Spent: 15
 ### Impressions
 * Very excited to be diving a bit more into Swift! I'm enjoying working with 
  Xcode, and especially using drag-and-drop to connect outlets, I'm curious to 
- learn more about how it manages communication across objects. Looking forward
- to furthering work on this project over the next couple weeks! 
+ learn more about how it manages communication across objects.
 
