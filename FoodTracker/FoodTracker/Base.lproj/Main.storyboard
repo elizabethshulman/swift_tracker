@@ -17,8 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ycp-Nw-1t9">
-                                <rect key="frame" x="10" y="40" width="355" height="424.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLV-FY-9bP" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                <rect key="frame" x="10" y="472" width="200" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ycp-Nw-1t9">
+                                <rect key="frame" x="25" y="39" width="325" height="424.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kO-UF-4iH">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -51,16 +55,12 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLV-FY-9bP" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                <rect key="frame" x="10" y="472" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="top" secondItem="Ycp-Nw-1t9" secondAttribute="topMargin" constant="-40" id="93o-1N-N2j"/>
-                            <constraint firstAttribute="trailing" secondItem="Ycp-Nw-1t9" secondAttribute="trailing" constant="10" id="AYg-4K-oaR"/>
-                            <constraint firstItem="Ycp-Nw-1t9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DFf-FQ-Hzx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ycp-Nw-1t9" secondAttribute="trailing" id="AYg-4K-oaR"/>
+                            <constraint firstItem="Ycp-Nw-1t9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DFf-FQ-Hzx"/>
                         </constraints>
                         <edgeInsets key="layoutMargins" top="0.0" left="25" bottom="0.0" right="25"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
