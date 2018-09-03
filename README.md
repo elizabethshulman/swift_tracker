@@ -1,4 +1,4 @@
-# warmup
+# Warmup
 
 Basic project to interact with data contained in a remote database.
 
@@ -9,9 +9,9 @@ Name: Elizabeth Shulman
 
 Start Date: September 1, 2018
 
-Finish Date: 
+Finish Date: September 3, 2018
 
-Hours Spent:
+Hours Spent: 15
 
 
 ### Resources Used
@@ -20,13 +20,22 @@ Hours Spent:
 
 ### Features
 
+* Log to track meals, with the ability to save names, images, and ratings.
+* Table display to view saved meal data
 
 ### Known Bugs
 
+* [ ]  #3 : Text field for meal name entry doesn't resize to fill available space.
+* [ ] #16 : The root stack view's vertical constraint is incorrect, resulting in
+ awkward layouts with screen sizes different from the iPhone 7. 
+
 
 ### Notes
-
+* N/A
 
 ### Impressions
-
+* Very excited to be diving a bit more into Swift! I'm enjoying working with 
+ Xcode, and especially using drag-and-drop to connect outlets, I'm curious to 
+ learn more about how it manages communication across objects. Looking forward
+ to furthering work on this project over the next couple weeks! 
 
