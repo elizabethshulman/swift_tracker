@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meal Table View Controller-->
+        <!--Your Meals-->
         <scene sceneID="RLn-Ga-jcp">
             <objects>
                 <tableViewController id="mn7-DE-PZn" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,13 @@
                             <outlet property="delegate" destination="mn7-DE-PZn" id="uwf-2V-Dp3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ZVJ-PS-Epa"/>
+                    <navigationItem key="navigationItem" title="Your Meals" id="k29-L8-pom">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sSP-xB-G0y">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="WAb-G3-amu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHQ-9y-kp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,14 +71,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ycp-Nw-1t9">
                                 <rect key="frame" x="25" y="40" width="325" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="py5-6Y-1dV">
-                                        <rect key="frame" x="98" y="0.0" width="129" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -96,6 +102,10 @@
                                         </userDefinedRuntimeAttributes>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="py5-6Y-1dV" firstAttribute="leading" secondItem="Ycp-Nw-1t9" secondAttribute="leadingMargin" id="Egt-v9-HGO"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="py5-6Y-1dV" secondAttribute="trailing" id="Jsv-KE-gng"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,6 +117,7 @@
                         <edgeInsets key="layoutMargins" top="0.0" left="25" bottom="0.0" right="25"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="nameTextField" destination="py5-6Y-1dV" id="BKR-sI-LCP"/>
                         <outlet property="photoImageView" destination="oEi-Cy-mQt" id="39s-ZQ-yWm"/>
