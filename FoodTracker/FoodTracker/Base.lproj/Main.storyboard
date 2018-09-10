@@ -120,7 +120,11 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="New Meal" id="aVW-kz-VUP">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aTp-HZ-Dy6"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="esw-SQ-gSs"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="esw-SQ-gSs">
+                            <connections>
+                                <segue destination="psJ-QA-kh0" kind="unwind" unwindAction="unwindToMealListWithSender:" id="C4d-lv-Ai0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="py5-6Y-1dV" id="BKR-sI-LCP"/>
@@ -130,6 +134,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="psJ-QA-kh0" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="9Qp-Ox-oUU">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="UCH-En-fbe"/>
