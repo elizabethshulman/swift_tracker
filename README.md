@@ -21,8 +21,7 @@ Hours Spent: 25
 * Log to track meals, with the ability to save names, images, and ratings:  
 * Table display to view saved meal data
 
-<img src="/FoodTracker/FoodTracker/lib/Meal Entry.png" width="400">
-<img src="/FoodTracker/FoodTracker/lib/Table View.png" width="393">   
+<img src="/FoodTracker/FoodTracker/lib/Meal Entry.png" width="400"><img src="/FoodTracker/FoodTracker/lib/Table View.png" width="393">   
 
 
 ### Known Bugs
